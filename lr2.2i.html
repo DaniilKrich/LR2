@@ -5,7 +5,7 @@
         <title>LR2</title> 
         </head>
         <form class="box" action="index.html" method="POST">
-            <hl>Вычислить дискриминант</hl>
+            <hl>Найти наибольшее число</hl>
             <br>
             <b>a</b>
             <input type="number" id="A" placeholder="Введите число a"/>
@@ -16,7 +16,7 @@
             <b>c</b>
             <input type="number" id="C" placeholder="Введите число c"/>
             <br>
-            <input type="button" id="btn" value="вычислить дискреминант" onclick="CalcD()"/>
+            <input type="button" id="btn" value="Найти" onclick="CalcD()"/>
 
             <script>
                 function CalcD()
@@ -24,8 +24,8 @@
                     var a = document.getElementById('A').value;
                     var b = document.getElementById('B').value;
                     var c = document.getElementById('C').value;
-                    alert(b*b-4*a*c);
+                    alert(Math.max(a,b,c));
                 }
             </script>
         </form>
-</html>
+</html> 
